@@ -8,12 +8,12 @@ import { Link } from 'react-router-dom';
 
 function HeaderOrder(currentLocation) {
     console.log(currentLocation);
-    if (currentLocation.currentLocation == "/") {
+    if (currentLocation.currentLocation == "/portfolioReact.github.io/") {
         return (
             <HomeHeaderOrder mainColor='#9a34bd' secondColor='#c89ff0' />
         );
     }
-    else if (currentLocation.currentLocation == "/works") {
+    else if (currentLocation.currentLocation == "/portfolioReact.github.io/works") {
         return (
             <WorksHeaderOrder mainColor='#d12d2d' secondColor='#ffb7b7' />
         );
@@ -34,9 +34,9 @@ const Header = (props) => {
                 </ul>
             </nav>
             <div className="header__bullets bullets">
-                <Link to="/" className={props.currentLocation == '/' ? 'bullets__item _active' : 'bullets__item'}></Link>
-                <Link to="/works" className={props.currentLocation == '/works' ? 'bullets__item _active' : 'bullets__item'}></Link>
-                <Link to="/contacts" className={props.currentLocation == '/contacts' ? 'bullets__item _active' : 'bullets__item'}></Link>
+                <Link to="/portfolioReact.github.io/" className={props.currentLocation == '/portfolioReact.github.io/' ? 'bullets__item _active' : 'bullets__item'}></Link>
+                <Link to="/portfolioReact.github.io/works" className={props.currentLocation == '/portfolioReact.github.io/works' ? 'bullets__item _active' : 'bullets__item'}></Link>
+                <Link to="/portfolioReact.github.io/contacts" className={props.currentLocation == '/portfolioReact.github.io/contacts' ? 'bullets__item _active' : 'bullets__item'}></Link>
             </div>
         </header >
     );

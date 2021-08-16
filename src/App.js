@@ -22,9 +22,9 @@ const App = () => {
         <Header currentLocation={location.pathname} />
         <animated.div style={props}>
           <Switch location={item}>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/works' component={Works} />
-            <Route exact path='/contacts' component={Contacts} />
+            <Route exact path='/portfolioReact.github.io/' component={Home} />
+            <Route exact path='/portfolioReact.github.io/works' component={Works} />
+            <Route exact path='/portfolioReact.github.io/contacts' component={Contacts} />
           </Switch>
         </animated.div>
       </div>
